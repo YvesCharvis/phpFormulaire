@@ -18,3 +18,11 @@ input[type="number"] {
   display: none; }
   input[type="checkbox"]:checked ~ input[type="number"] {
     display: inline; }
+
+main {
+  color: #FFF;
+  width: 300px;
+  height: 450px;
+  transform-origin: 25% 50%;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out; }

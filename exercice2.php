@@ -102,24 +102,20 @@ $erreur[] = "<div class='list-group-item list-group-item-success'>le client est 
 	echo "<li class='list-group-item list-group-item-danger'> $value <li> <br>" ;
 }
 ?>
-<div class="row">
+<main>
 <form method="post" class="form-inline">
-	<div class="form-group">
-		<div class="col-sm-12 ">
-			<label class="col-sm-3 control-label"> Votre nom : <input type="text" class="form-control" name="nom" placeholder="Nom"></label>
-		</div>
- 		<div class="col-sm-12">
-			<label class="col-sm-3 control-label"> Votre Prenom : <input type="text" class="form-control" name="prenom" placeholder="Prenom"></label>
-		</div>
- 		<div class="col-sm-12">
-			<label class="col-sm-3 control-label"> Date de naissance : <input type="date" class="form-control" name="naissance"></label>
-		</div>
-	 	<div class="col-sm-12">
-			<label class="col-sm-3 control-label"> Carte de fidélité ? : <input type="checkbox" name="card"> </label>
+	
+			<label class="control-label"> Votre nom : <input type="text" class="form-control" name="nom" placeholder="Nom"></label>
+	
+			<label class="control-label"> Votre Prenom : <input type="text" class="form-control" name="prenom" placeholder="Prenom"></label>
+	
+			<label class="control-label"> Date de naissance : <input type="date" class="form-control" name="naissance"></label>
+	
+			<label class="control-label"> Carte de fidélité ? : <input type="checkbox" name="card"> </label>
  		
-			<label class="col-sm-3 control-label"> Le numéro de carte : <input type="number" class="form-control" name="numeCard" placeholder="Numéro"></label>
-		</div>
-				  <select class="col-sm-3" name="typecarte">
+			<label class="control-label"> Le numéro de carte : <input type="number" class="form-control" name="numeCard" placeholder="Numéro"></label>
+		
+				  <select  name="typecarte">
 				  <?php foreach ($typedecarte as $value) {
 				  	echo "<option valueur=$value->id>.$value->type.</option>";
 				  }
@@ -127,15 +123,13 @@ $erreur[] = "<div class='list-group-item list-group-item-success'>le client est 
 
   </select>
   <br>
-		<div class="form-group">
-
- 
-    		<div class="col-sm-offset-2 col-sm-10">
+		
 				<button class="btn btn-default" type="submit">OK</button>
 			</div>
 		</div>
 	</div>
 </div>
 </form>
+</main>
 </body>
 </html>
