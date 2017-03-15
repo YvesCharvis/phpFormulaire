@@ -2,9 +2,7 @@
 $pdo = new PDO('mysql:dbname=colyseum;host=localhost; charset=utf8', 'root', '');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,8 +17,10 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
+
 <body>
 <?php
+
 $erreur = [];
 if (isset($_POST) && !empty($_POST)) {
 	$donner=[];
@@ -88,10 +88,11 @@ $erreur[] = "<div class='list-group-item list-group-item-success'>le client est 
 	echo "post effectué";
 }*/
 ?>
+
 <h1> Ajout de client </h1>
-<nav class="navbar navbar-inverse">
-  ...
-</nav>
+	<nav class="navbar navbar-inverse">
+ 	 ...
+	</nav>
 
 
 
@@ -100,7 +101,6 @@ $erreur[] = "<div class='list-group-item list-group-item-success'>le client est 
 <?php foreach ($erreur as $value) {
 	echo "<li class='list-group-item list-group-item-danger'> $value <li> <br>" ;
 }
-
 ?>
 
 
