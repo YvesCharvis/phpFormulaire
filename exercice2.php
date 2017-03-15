@@ -119,9 +119,9 @@ $erreur[] = "<div class='list-group-item list-group-item-success'>le client est 
  		
 			<label class="col-sm-3 control-label"> Le numéro de carte : <input type="number" class="form-control" name="numeCard" placeholder="Numéro"></label>
 		</div>
-				  <select class="col-sm-3" name="typedecarte">
+				  <select class="col-sm-3" name="typecarte">
 				  <?php foreach ($typedecarte as $value) {
-				  	echo "<option valueur=$value->id>$value->type</option>";
+				  	echo "<option valueur=$value->id>.$value->type.</option>";
 				  }
 				  ?>
 
