@@ -118,8 +118,7 @@ $erreur[] = "<div class='list-group-item list-group-item-success'>le client est 
 		</div>
 	 	<div class="col-sm-12">
 			<label class="col-sm-3 control-label"> Carte de fidélité ? : <input type="checkbox" name="card"> </label>
-		</div>
- 		<div class="col-sm-12">
+ 		
 			<label class="col-sm-3 control-label"> Le numéro de carte : <input type="number" class="form-control" name="numeCard" placeholder="Numéro"></label>
 		</div>
 		<div class="form-group">

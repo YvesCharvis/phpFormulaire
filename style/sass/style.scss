@@ -10,16 +10,8 @@ h1{
   padding: 15%;
 
 }
-table{
-	text-align: center;
-  width:100%;
-  table-layout: fixed;
-}
 
 
-
-
-/* demo styles */
 
 
 body{
@@ -28,8 +20,13 @@ body{
   
 }
 
+/*------------*/
 
-form{
-
+input[type="number"]{
+  display: none;
+  input[type="checkbox"]:checked ~ &{
+    display: inline;
+  }
 }
+
 

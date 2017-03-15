@@ -9,12 +9,12 @@ h1 {
   text-align: center;
   padding: 15%; }
 
-table {
-  text-align: center;
-  width: 100%;
-  table-layout: fixed; }
-
-/* demo styles */
 body {
   background: -linear-gradient(left, #25c481, #25b7c4);
   background: linear-gradient(to right, #25c481, #25b7c4); }
+
+/*------------*/
+input[type="number"] {
+  display: none; }
+  input[type="checkbox"]:checked ~ input[type="number"] {
+    display: inline; }
